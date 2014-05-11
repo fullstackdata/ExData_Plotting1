@@ -11,7 +11,7 @@ tgtDates <- as.Date(c('01/02/2007', '02/02/2007'), format="%d/%m/%Y");
 hh <- with(hhAll, subset(hhAll, Date %in% tgtDates));
 hh$datetime <- as.POSIXlt(hh$datetime, format="%d/%m/%Y %H:%M:%S"); 
 
-png("plot1.png", width=480, height=480);
+png("plot4.png", width=480, height=480);
 par(mfrow=c(2,2));
 with(hh, plot(datetime,Global_active_power, type="o", col='black', pch="", xlab="", ylab="Global Active Power"));
 
